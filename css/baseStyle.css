@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cuerpos;
+}
+:root{
+    /*Colores principales*/
+    --color_Azul: #000098;
+    --color_Amarillo:#eedc40;
+    --color_Rojo: #be1414;
+
+    /* Colores default para fondo personalizados */
+    --color_Blanco:#FFF9E8;
+    --color_Negro: #010020;
+}
+
+/* Tipografia para TITULOS*/
+@font-face {
+    font-family: Titulos;
+    src: url(../tipografias/louis/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+/* Tipografia para CUERPO*/
+@font-face {
+    font-family: Cuerpos;
+    src: url(../tipografias/Inter/Inter_18pt-Medium.ttf);
+}
+/*para modo claro/oscuro*/
+.claro {
+    background-image: url(../imgs/imagen/celular-claro.jpg);
+    width: 100%;
+    background-size: cover;
+}
+.claro.oscuro{
+    background-image: url(../imgs/imagen/celular-oscuro.jpg);
+    width: 100%;
+    background-size: cover;
+    color: var(--color_Blanco);
+  border-color: var(--color_Blanco);
+}
+
+.oscuro h1, 
+.oscuro h2{ /*cambio de Color al aplicar Modo oscuro*/
+    color: var(--color_Blanco);
+  }
+
+/* HEADER, NAV, FOOTER*/
+/* HEADER*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_Negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    padding: 10px;
+}
+header img{
+    padding: 10px;
+    height: 100%;
+}
+/* NAV*/
+nav{
+    width: 100%;
+    height: 49px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 10px var(--color_Blanco);
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
+}
+nav a{
+    color:var(--color_Blanco);
+    text-decoration: none;
+    padding: 15px 20px 15px;
+    display: none;
+    border-bottom: 1px outset var(--color_Blanco);
+}
+nav a.icon{
+    align-self: flex-end;
+    display: block;
+}
+.topnav.responsive a{
+    padding-right: 17%;
+    margin-left: 50%;
+    display: block;
+    background-color: var(--color_Negro);
+    text-align: left;
+}
+.topnav.responsive a.icon{
+    padding-left: 20px;
+    padding-right: 4%;
+    position: absolute;
+    top: 0;
+    align-self: flex-end;
+}
+nav a:hover{
+    background-color:var(--color_Azul);
+}
+
+.footer {
+  height: 100px;
+  background-color: var(--color_Negro);
+  padding: 20px 40px;
+  color: var(--color_Blanco, #fff);
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo izquierda */
+.footer-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Enlaces centro */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-links a {
+  color: var(--color_Blanco, #fff);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Iconos y contacto derecha */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.footer-social .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a i {
+  color: var(--color_Blanco);
+  font-size: 18px;
+}
+
+.footer-social p {
+  font-size: 1rem;
+  margin: 0;
+}
+@media screen and (min-width: 786px){
+    
+    nav{
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav a {
+        display: block;
+    }
+    nav a.icon{
+        display: none;
+    }
+    .topnav.responsive a{
+        padding: 15px 20px 15px;
+        margin-right: 0;
+        display: block;
+        background-color: var(--color_Negro);
+    }
+    .topnav.responsive a.icon{
+        padding-left: 0;
+        display: none;
+        top: 0;
+    }
+
+    
+    }
+
+/*-- hoja de estilo desde 1024 y + --*/
+@media screen and (min-width: 1024px){
+
+    nav{
+        justify-content: space-evenly;
+    }
+   
+}
+
+/*Switch para modo claro/oscuro*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    left: 80%;
+    margin-top: 6%;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color_Amarillo);
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: var(--color_Blanco);
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    transition: 0.4s;
+  }
+  
+  input:checked+.slider {
+    background-color: var(--color_Negro);
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px var(--color_Negro);
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }

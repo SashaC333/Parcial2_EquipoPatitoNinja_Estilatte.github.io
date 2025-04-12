@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilatte</title>
+    <link rel="stylesheet" href="css/MenuP_Estilo.css">
+    <link rel="stylesheet" href="css/baseStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="js/funcionModo.js"></script>
+
+    <!-- HEADER Y NAV -->
+    <script src="js/javascript.js"></script>
+    <header>
+      <img src="imgs/estilatteLogo3.svg" alt="Logo_EstiLatte">
+      
+        <nav class="topnav" id="mytopnav">
+            <a href="index.html" >Inicio</a>
+            <a href="menu.html" >Menú</a>
+            <a href="promosionesYEeventos.html" >Promociones</a>
+            <a href="contacto.html" >Contacto</a>
+            <a class="icon" onclick="funcionNav()">
+                <i class="fa fa-bars" style="color:#FFF9E8;"></i>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="modo" class="claro">
+            <label class="switch">
+                <input type="checkbox" id="input" onclick="funcionModo()">
+                <span class="slider"></span>
+            </label>
+
+            <br>
+            <h2>Especial de la Semana</h2>
+            <br>
+            <!-- pendientes -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="imgs/imagen/CafeHeladoEXP.jpg" style="width:100%">
+                    <div class="text">Disfruta de Un buen Cafe helado</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="imgs/imagen/LatteExp.jpg" style="width:100%">
+                    <div class="text">¿Antojo de un cafe Latte?</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="imgs/imagen/TiramisuEXP.jpg" style="width:100%">
+                    <div class="text">No Olvides de probar</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script src="js/FuncionSlide.js"></script>
+            <br>
+
+            <div class="sobreNos">
+                <h2>Sobre Nosotros</h2>
+                <p>Bienvenidos a nuestra cafetería, un espacio donde el arte y el buen café se fusionan en armonía.
+                    Inspirados por el movimiento De Stijl, nuestro ambiente se caracteriza por líneas rectas, colores
+                    primarios y una estética minimalista que busca transformar cada visita en una experiencia visual
+                    única. Aquí, no solo disfrutarás de una excelente selección de cafés, sino también de un entorno que
+                    celebra la simplicidad y la modernidad del diseño. En nuestra cafetería, cada rincón refleja nuestra
+                    pasión por el arte y el buen gusto, creando un lugar perfecto para relajarte, compartir y disfrutar
+                    de lo mejor de ambos mundos.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          
+          <!-- Logo izquierda -->
+          <div class="footer-logo">
+            <img src="imgs/estilatteLogo3.svg" alt="Logo EstiLatte">
+            <p>© 2025 EstiLatte</p>
+          </div>
+      
+          <!-- Enlaces centro -->
+          <div class="footer-links">
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+      
+          <!-- Iconos + contacto derecha -->
+          <div class="footer-social">
+            <div class="icons">
+              <a href="#"><img src="imgs/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="imgs/tiktok.svg" alt="tiktok"></i></a>
+              <a href="#"><img src="imgs/instagram.svg" alt="instagram"></a>
+            </div>
+            <p>***-****-*****</p>
+          </div>
+      
+        </div>
+      </footer>
+</body>
+
+</html>

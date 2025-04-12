@@ -1,0 +1,84 @@
+.titulos {
+    text-align: center;
+    padding-top: 9%;
+    margin-bottom: 7%;
+  }
+  .titulos {
+    font-family: Titulos;
+    color: var(--color_Azul);
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  /* Promociones */
+  .caja {
+    width: 30%;
+    height: 200px;
+    border: 3px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px var(--color_Negro);
+    display: flex;
+    background-image: url(../imgs/imagen/fondo.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .caja:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--color_Blanco);
+    border-radius: 15px;
+  }
+  
+  .card h3 {
+    color: var(--color_Azul);
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: var(--color_Azul);
+  }
+  
+  /* Eventos */
+  .evento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color_Negro);
+    padding: 20px;
+    border-radius: 15px;
+    width: 395px;
+    box-shadow: 2px 2px 6px var(--color_Negro);
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .imagen-evento img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .texto-evento {
+    margin-top: 10px;
+    color: var(--color_Azul);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--color_Blanco);
+  }
+  
+  .oscuro .evento{
+    background-color: var(--color_Blanco);
+  }

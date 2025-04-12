@@ -1,0 +1,104 @@
+.container-menu{
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+}
+h1 {
+    margin: 10px 25px;
+    font-family: Titulos;
+    color: var(--color_Azul);
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    margin: 10px 25px;
+    font-family: Titulos;
+    color: var(--color_Amarillo);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.section-container .card{
+    background-color: var(--color_Negro);
+    width: 360px;
+    border: 2px var(--color_Negro) solid;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    
+}
+.foto{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+.foto img{
+    height: 100%;
+    border-radius: 5px;
+}
+.texto{
+    width: 210px;
+    height: auto;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--color_Rojo);
+    padding: 5px;
+    
+}
+.texto p{
+    font-size: 1rem;
+    padding: 8px;
+}
+.oscuro .card{
+    background-color: var(--color_Blanco);
+    color: var(--color_Blanco);
+    border-color: var(--color_Blanco);
+}
+@media screen and (min-width: 768px) {
+    .section-container{
+        justify-content:space-evenly;
+        flex-direction: row;
+    }
+    .section-container .card{
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .section-container{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .section-container .card{
+        width: 290px;
+        border-radius: 5px;
+        display: block;
+        margin: 10px;
+        
+    }
+    .foto{
+        width: 290px;
+        height: 290px;
+        padding: 10px;
+    }
+    .texto{
+        width: 100%;
+        height: 120px;
+        border-radius: 0 0 5px 5px;
+        background-color: var(--color_Rojo);
+        padding: 5px;
+        
+    }
+}

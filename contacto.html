@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/baseStyle.css" />
+    <link rel="stylesheet" href="css/estilo_Contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script src="js/funcionModo.js"></script>
+
+    <!-- HEADER Y NAV -->
+    <script src="js/javascript.js"></script>
+    <header>
+      <img src="imgs/estilatteLogo3.svg" alt="Logo_EstiLatte">
+      
+        <nav class="topnav" id="mytopnav">
+            <a href="index.html" >Inicio</a>
+            <a href="menu.html" >Menú</a>
+            <a href="promosionesYEeventos.html" >Promociones</a>
+            <a href="contacto.html" >Contacto</a>
+            <a class="icon" onclick="funcionNav()">
+                <i class="fa fa-bars" style="color:#FFF9E8;"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="modo" class="claro">
+            <label class="switch">
+                <input type="checkbox" id="input" onclick="funcionModo()">
+                <span class="slider"></span>
+            </label>
+            <div id="titulos" class="titu">
+                <h2>¡Encuentranos aqui!</h2>
+            </div>
+            <div class="ubicacion">
+
+                <div class="direccion">
+                    <img src="imgs/Location.svg" alt="Locacion">
+                    <p>Puedes encontrarnos en <b>Calle Encino #123, Col. San Isidro de las Lomas Altas</b> para obtener
+                        la mejor
+                        experiencia de un cafe al estilo de stijl!</p>
+                </div>
+                <div class="ImagenLugar">
+                    <img src="imgs/imagen/cafeteria.jpg" alt="Imagen del lugar">
+                </div>
+            </div>
+            <div id="titulos2" class="titu">
+                <h2>¡Contáctanos!</h2>
+            </div>
+            <div class="formContacto">
+
+                <form action="archivo.php" method="post">
+
+                    <table>
+                        <tr>
+                            <td class="der"><input type="text" id="name" name="nombre" placeholder="Nombre y apellido"
+                                    cols="30"></td>
+                        </tr>
+                        <tr>
+                            <td class="der"><input type="email" id="correo" name="correo"
+                                    placeholder="Correo electronico"></td>
+                        </tr>
+                        <tr>
+                            <td class="der"><input type="tel" id="numero" name="numero" placeholder="Numero de celular">
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <table>
+                        <tr>
+
+                            <td class="der"><textarea name="mensaje" id="mensaje" rows="10"
+                                    placeholder="Escribe un comentario"></textarea></td>
+                            <!--cols con las columnas que se mostraran inicialmente-->
+                        </tr>
+                        <tr>
+                            <td class="der"><input type="button" value="Enviar"></td>
+                            <!--submit es el boton que lo envia al php-->
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+          
+          <!-- Logo izquierda -->
+          <div class="footer-logo">
+            <img src="imgs/estilatteLogo3.svg" alt="Logo EstiLatte">
+            <p>© 2025 EstiLatte</p>
+          </div>
+      
+          <!-- Enlaces centro -->
+          <div class="footer-links">
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+      
+          <!-- Iconos + contacto derecha -->
+          <div class="footer-social">
+            <div class="icons">
+              <a href="#"><img src="imgs/facebook.svg" alt="facebook"></a>
+              <a href="#"><img src="imgs/tiktok.svg" alt="tiktok"></i></a>
+              <a href="#"><img src="imgs/instagram.svg" alt="instagram"></a>
+            </div>
+            <p>***-****-*****</p>
+          </div>
+      
+        </div>
+      </footer>
+</body>
+
+</html>

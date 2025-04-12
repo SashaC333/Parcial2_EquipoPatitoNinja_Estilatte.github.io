@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/baseStyle.css" />
+    <link rel="stylesheet" href="css/estilo_Menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Menú</title>
+  </head>
+  <body>
+    <!-- Sasha estuvo aqui -->
+    <script src="js/funcionModo.js"></script>
+
+    <!-- HEADER Y NAV -->
+    <script src="js/javascript.js"></script>
+    <header>
+      <img src="imgs/estilatteLogo3.svg" alt="Logo_EstiLatte" />
+
+      <nav class="topnav" id="mytopnav">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="promosionesYEeventos.html">Promociones</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="icon" onclick="funcionNav()">
+          <i class="fa fa-bars" style="color: #fff9e8"></i>
+        </a>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container-menu">
+      <section id="modo" class="claro">
+        <label class="switch">
+            <input type="checkbox" id="input" onclick="funcionModo()">
+            <span class="slider"></span>
+        </label>
+
+        
+        <h1>Menú</h1>
+        <h2>Bebidas</h2>
+        <!-- contenedor para el menu -->
+        <section class="section-container">
+          <!-- cards de bebidas para el menu -->
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Espresso.png" alt="Café_Espresso" />
+            </div>
+            <div class="texto">
+              <h3>Café Espresso</h3>
+              <p>
+                El clásico café intenso, servido solo o acompañado de una
+                pequeña cantidad de leche.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Latte.png" alt="Café_Latte" />
+            </div>
+            <div class="texto">
+              <h3>Café Latte</h3>
+              <p>
+                Café espresso con leche vaporizada y una ligera capa de espuma.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Capuchino.png" alt="Capuchino" />
+            </div>
+            <div class="texto">
+              <h3>Capuchino</h3>
+              <p>
+                Café espresso con leche vaporizada y una capa de espuma de
+                leche, espolvoreado con cacao o canela.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/TeChai.png" alt="Té_Chai_Latte" />
+            </div>
+            <div class="texto">
+              <h3>Té Chai Latte</h3>
+              <p>
+                Una mezcla especiada de té negro, canela, jengibre y clavo con
+                leche vaporizada.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img
+                src="imgs/imgs_Menu/Smoothie.jpg"
+                alt="Smoothie_de_frutos_rojos"
+              />
+            </div>
+            <div class="texto">
+              <h3>Smoothie de frutos rojos</h3>
+              <p>
+                Un batido refrescante hecho con fresas, frambuesas, moras y
+                yogur natural.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img
+                src="imgs/imgs_Menu/CafeHeladoConCaramelo.jpg"
+                alt="Café_helado_con_caramelo"
+              />
+            </div>
+            <div class="texto">
+              <h3>Café helado con caramelo</h3>
+              <p>Café frío con leche, jarabe de caramelo y cubos de hielo.</p>
+            </div>
+          </div>
+        </section>
+
+        <h2>Postres</h2>
+        <section class="section-container">
+          <!-- cards de postres para el menu -->
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Pay.jpg" alt="Tarta_de_manzana" />
+            </div>
+            <div class="texto">
+              <h3>Tarta de Manzana Casera</h3>
+              <p>
+                Masa crujiente rellena de manzanas caramelizadas con un toque de
+                canela.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu//Brownie.jpg" alt="Brownie" />
+            </div>
+            <div class="texto">
+              <h3>Brownie de Chocolate</h3>
+              <p>Un pastel de chocolate denso, húmedo y con trozos de nuez.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Chesecake.jpg" alt="Cheesecake" />
+            </div>
+            <div class="texto">
+              <h3>Cheesecake de Frambuesa</h3>
+              <p>Suave y cremoso, con una capa de frambuesas frescas encima.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Galletas.jpg" alt="Galletas_de_avena" />
+            </div>
+            <div class="texto">
+              <h3>Galletas de Avena y Pasas</h3>
+              <p>
+                Galletas tiernas y sabrosas hechas con avena, pasas y un toque
+                de canela.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img src="imgs/imgs_Menu/Tiramisu.jpg" alt="Tiramisu" />
+            </div>
+            <div class="texto">
+              <h3>Tiramisú</h3>
+              <p>
+                Clásico postre italiano a base de café, queso mascarpone y
+                cacao.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="foto">
+              <img
+                src="imgs/imgs_Menu/PastelDeLimon.jpg"
+                alt="Pastel_de_limon"
+              />
+            </div>
+            <div class="texto">
+              <h3>Pastel de Limón y Merengue</h3>
+              <p>
+                Masa crujiente con un relleno de crema de limón y una capa de
+                merengue dorado.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <!-- Logo izquierda -->
+        <div class="footer-logo">
+          <img src="imgs/estilatteLogo3.svg" alt="Logo EstiLatte">
+          <p>© 2025 EstiLatte</p>
+        </div>
+    
+        <!-- Enlaces centro -->
+        <div class="footer-links">
+          <a href="menu.html">Menú</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+    
+        <!-- Iconos + contacto derecha -->
+        <div class="footer-social">
+          <div class="icons">
+            <a href="#"><img src="imgs/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="imgs/tiktok.svg" alt="tiktok"></i></a>
+            <a href="#"><img src="imgs/instagram.svg" alt="instagram"></a>
+          </div>
+          <p>***-****-*****</p>
+        </div>
+        </div>
+    
+      </div>
+    </footer>
+  </body>
+</html>

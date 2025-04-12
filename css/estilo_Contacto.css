@@ -1,0 +1,154 @@
+/* Estructura principal */
+.ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+}
+
+.titu {
+  text-align: center;
+  padding-top: 9%;
+  margin-bottom: 7%;
+  transition: color 0.3s ease;
+}
+
+.titu.oscuro {
+  color: var(--color_Blanco);
+}
+
+/* Dirección */
+.direccion {
+  width: 80%;
+  background-color: var(--color_Amarillo);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  gap: 15px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.direccion img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
+.direccion p {
+  flex: 0 0 55%;
+  margin: 0;
+}
+
+
+/* Imagen del lugar - base (móviles) */
+.ImagenLugar {
+  width: 80%;
+  margin: 10% auto 5%;
+  display: block;
+  border-radius: 10px;
+  
+}
+
+.ImagenLugar img {
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  
+}
+
+/* Formulario */
+.formContacto form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+table {
+  width: 85%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4%;
+  border: 3px solid var(--color_Azul);
+  border-radius: 5px;
+  margin-bottom: 7%;
+}
+
+input[type="button"] {
+  width: 40%;
+  margin-top: 10px;
+  background-color: var(--color_Rojo);
+  color: var(--color_Blanco);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 13%;
+  cursor: pointer;
+}
+
+/* Media Query desde 786px */
+@media screen and (min-width: 786px) {
+
+  .ImagenLugar {
+    width: 90%;
+    margin: 5% auto;
+  }
+
+  .ImagenLugar img {
+    width: 100%;
+    padding: 20px;
+  }
+
+  table {
+    width: 70%;
+  }
+}
+
+/* Media Query desde 1024px */
+@media screen and (min-width: 1024px) {
+  .ubicacion {
+    flex-direction: row;
+  }
+
+  .direccion {
+    width: 35%;
+  }
+
+  .direccion p {
+    margin-right: 10%;
+  }
+
+  .ImagenLugar {
+    width: 35%;
+    margin: 0;
+  }
+
+  .ImagenLugar img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .formContacto form {
+    flex-direction: row;
+  }
+
+  table {
+    width: 35%;
+    margin-bottom: 5%;
+  }
+
+  input[type="button"] {
+    background-color: var(--color_Azul);
+  }
+}
